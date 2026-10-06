@@ -1,0 +1,976 @@
+<!doctype html>
+<html dir="rtl" lang="ar">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>NOOT Delivery Service - Partner of talabat</title>
+
+    <!-- خط Cairo من Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- أيقونات Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- مكتبة Tailwind CSS plugins -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <!-- ملف التنسيقات الخارجي -->
+    <link rel="stylesheet" href="Master.css" />
+  </head>
+  <body class="site-body">
+    <!-- ==========================================
+       1. الهيدر وشريط التنقل (Header & Navigation)
+       ========================================== -->
+    <header class="header-navbar">
+      <div class="header-container">
+        <!-- شعار الشركة (Logo) -->
+        <div class="brand-identity">
+          <div class="brand-logo-wrapper">
+            <div class="brand-logo-main">
+              <i class="fa-solid fa-motorcycle brand-icon"></i>
+              <span class="brand-title">NOOT</span>
+            </div>
+            <span class="brand-subtitle">Delivery Service</span>
+          </div>
+        </div>
+
+        <!-- قائمة التنقل الرئيسية -->
+        <nav class="main-navigation">
+          <a class="nav-link" href="#lectures">
+            <i class="fa-regular fa-calendar-days nav-icon"></i>
+            <span>مواعيد المحاضرات</span>
+          </a>
+          <a class="nav-link" href="#locations">
+            <i class="fa-solid fa-location-dot nav-icon"></i>
+            <span>اماكن السكن</span>
+          </a>
+          <a class="nav-link" href="#bonuses">
+            <i class="fa-solid fa-gift nav-icon"></i>
+            <span>البونصات</span>
+          </a>
+          <a class="nav-link" href="#supervisors-form">
+            <i class="fa-solid fa-users nav-icon"></i>
+            <span>مشرفين الفورم</span>
+          </a>
+          <a class="nav-link" href="#supervisors-marketing">
+            <i class="fa-solid fa-bullhorn nav-icon"></i>
+            <span>مشرفين التسويق</span>
+          </a>
+          <a class="nav-link" href="#supervisor-inquiry">
+            <i class="fa-solid fa-magnifying-glass nav-icon"></i>
+            <span>استعلام مشرفين</span>
+          </a>
+          <a class="nav-link" href="#notes">
+            <i class="fa-solid fa-clipboard-check nav-icon"></i>
+            <span>ملاحظات</span>
+          </a>
+        </nav>
+
+        <!-- شارة الشريك (Partner Badge) -->
+        <div class="partner-badge">
+          <span class="partner-text"> talabat</span>
+          <span class="partner-brand">Partner of</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- ==========================================
+       2. قسم الهيرو الرئيسي (Hero Section)
+       ========================================== -->
+    <section class="hero-section">
+      <!-- طبقة التظليل الخلفية -->
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content-wrapper">
+        <!-- الجانب الأيمن: الشعار والـ Slogan -->
+        <div class="hero-brand-block">
+          <div class="hero-logo-box">
+            <div class="hero-logo-title-group">
+              <i class="fa-solid fa-motorcycle hero-motorcycle-icon"></i>
+              <h1 class="hero-title">NOOT</h1>
+            </div>
+            <p class="hero-subtitle">Delivery Service</p>
+            <div class="hero-partner-tag">
+              <span>الوكيل الرسمي لشركة طلبات</span>
+              <span class="hero-partner-talabat"></span>
+            </div>
+          </div>
+
+          <div class="hero-slogan-box">
+            <h2 class="hero-slogan-text">
+              مع بعض .. <span class="hero-slogan-highlight">نوصل أبعد</span>
+            </h2>
+          </div>
+        </div>
+
+        <!-- الجانب الأيسر: الرؤية والرسالة -->
+        <div class="hero-vision-block">
+          <div class="hero-vision-card">
+            <h3 class="hero-vision-title">فريق واحد .. هدف واحد</h3>
+            <p class="hero-vision-description">خدمة أسرع .. تجربة أفضل</p>
+            <div class="hero-vision-footer">
+              <span>منصة دليل الماركتنج</span>
+              <span class="hero-year-badge"> 2026</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+       3. المحتوى الرئيسي والخدمات (Main Content)
+       ========================================== -->
+    <main class="main-content-container">
+      <!-- شبكة كروت الخدمات السريعة (Service Action Cards) -->
+      <section id="services-grid" class="services-grid">
+        <!-- كارت 1: مواعيد المحاضرات -->
+        <a class="service-card" href="#lectures">
+          <div class="service-card-icon-wrapper">
+            <i class="fa-regular fa-calendar-days text-2xl"></i>
+          </div>
+          <span class="service-card-title">مواعيد المحاضرات</span>
+          <div class="service-card-arrow">
+            <i class="fa-solid fa-arrow-left text-xs"></i>
+          </div>
+        </a>
+
+        <!-- كارت 2: لوكيشنات -->
+        <a class="service-card" href="#locations">
+          <div class="service-card-icon-wrapper">
+            <i class="fa-solid fa-location-dot text-2xl"></i>
+          </div>
+          <span class="service-card-title">اماكن السكن</span>
+          <div class="service-card-arrow">
+            <i class="fa-solid fa-arrow-left text-xs"></i>
+          </div>
+        </a>
+
+        <!-- كارت 3: البونصات -->
+        <a class="service-card" href="#bonuses">
+          <div class="service-card-icon-wrapper">
+            <i class="fa-solid fa-gift text-2xl"></i>
+          </div>
+          <span class="service-card-title">بونصات</span>
+          <div class="service-card-arrow">
+            <i class="fa-solid fa-arrow-left text-xs"></i>
+          </div>
+        </a>
+
+        <!-- كارت 4: مشرفين الفورم -->
+        <a class="service-card" href="#supervisors-form">
+          <div class="service-card-icon-wrapper">
+            <i class="fa-solid fa-users text-2xl"></i>
+          </div>
+          <span class="service-card-title">مشرفين الفورم</span>
+          <div class="service-card-arrow">
+            <i class="fa-solid fa-arrow-left text-xs"></i>
+          </div>
+        </a>
+
+        <!-- كارت 5: مشرفين التسويق -->
+        <a class="service-card" href="#supervisors-marketing">
+          <div class="service-card-icon-wrapper">
+            <i class="fa-solid fa-rectangle-list text-2xl"></i>
+          </div>
+          <span class="service-card-title">مشرفين التسويق</span>
+          <div class="service-card-arrow">
+            <i class="fa-solid fa-arrow-left text-xs"></i>
+          </div>
+        </a>
+
+        <!-- كارت 6: استعلام مشرفين -->
+        <a class="service-card" href="#supervisor-inquiry">
+          <div class="service-card-icon-wrapper">
+            <i class="fa-solid fa-magnifying-glass text-2xl"></i>
+          </div>
+          <span class="service-card-title">استعلام مشرفين</span>
+          <div class="service-card-arrow">
+            <i class="fa-solid fa-arrow-left text-xs"></i>
+          </div>
+        </a>
+
+        <!-- كارت 7: ملاحظات -->
+        <a class="service-card service-card-wide" href="#notes">
+          <div class="service-card-icon-wrapper">
+            <i class="fa-solid fa-pen-to-square text-2xl"></i>
+          </div>
+          <span class="service-card-title">ملاحظات</span>
+          <div class="service-card-arrow">
+            <i class="fa-solid fa-arrow-left text-xs"></i>
+          </div>
+        </a>
+      </section>
+
+      <!-- قسم الإبرار والتحديثات المباشرة (Highlights & Updates) -->
+      <div class="highlights-container">
+        <!-- بنر تحفيزي (Motivational Banner) -->
+        <div class="motivational-banner">
+          <div class="motivational-glow-bg"></div>
+          <div class="motivational-icon-box">
+            <i class="fa-solid fa-motorcycle"></i>
+          </div>
+          <div class="motivational-text-box">
+            <h4 class="motivational-title">كل معلومة .. تصنع فرق</h4>
+            <p class="motivational-subtitle">شغلك اليوم .. نجاحك غداً</p>
+          </div>
+        </div>
+
+        <!-- قسم آخر التحديثات والأخبار (News Panel) -->
+        <div class="news-panel">
+          <div class="news-header">
+            <div class="news-header-title">
+              <i class="fa-solid fa-bell animate-pulse news-bell-icon"></i>
+              <span>آخر التحديثات</span>
+            </div>
+            <span class="news-sync-badge">2026 Live Sync</span>
+          </div>
+
+          <!-- قائمة الأخبار والتحديثات (يمكن إضافة خيارات جديدة بسهولة) -->
+          <ul id="news-list" class="news-list">
+            <li class="news-item">
+              <div class="news-item-content">
+                <span class="news-dot"></span>
+                <span>تم إضافة مواعيد المحاضرات </span>
+              </div>
+              <span class="news-date">2026-10-05</span>
+            </li>
+            <li class="news-item">
+              <div class="news-item-content">
+                <span class="news-dot"></span>
+                <span>تم اضافه لوكيشنات </span>
+              </div>
+              <span class="news-date">2026-10-05</span>
+            </li>
+            <li class="news-item">
+              <div class="news-item-content">
+                <span class="news-dot"></span>
+                <span>تم إضافة بونصات </span>
+              </div>
+              <span class="news-date">2026-10-06</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <!-- ========================================-->
+    <!-- ==========================================
+     قسم مواعيد المحاضرات (Lectures Schedule)
+     ========================================== -->
+    <section id="lectures" class="lectures-section">
+      <!-- رأس القسم والتمهيد -->
+      <div class="lectures-header">
+        <div class="lectures-title-wrapper">
+          <i class="fa-regular fa-calendar-days lectures-title-icon"></i>
+          <h2 class="lectures-title">مواعيد المحاضرات الأسبوعية</h2>
+        </div>
+        <p class="lectures-subtitle">
+          جدول مواعيد التدريب والمحاضرات للطيارين بكافة المحافظات والمناطق
+        </p>
+
+        <!-- تنبيه أيام العمل والاستثناءات العامة -->
+        <div class="lectures-general-notice">
+          <i class="fa-solid fa-circle-info text-brand-gold"></i>
+          <span
+            ><strong>ملاحظة عامة:</strong> المحاضرات تعمل طوال أيام الأسبوع
+            <strong>ما عدا الجمعة والأحد</strong> (مع مراعاة استثناءات بعض
+            المحافظات الموضحة أدناه).</span
+          >
+        </div>
+      </div>
+
+      <!-- شبكة مواعيد المحافظات والمناطق -->
+      <div class="lectures-grid">
+        <!-- 1. الجيزة -->
+        <div class="lecture-card">
+          <div class="lecture-card-header">
+            <i class="fa-solid fa-location-dot lecture-location-icon"></i>
+            <h3 class="lecture-city">الجيزة</h3>
+          </div>
+          <!-- زر نسخ لوكيشن الجيزه -->
+          <button
+            class="copy-location-btn"
+            data-location="مساء الخير يا فندم 
+مع حضرتك ا/ امين عوض
+رقم التليفون:  01004347615
+ مسئول التعيينات في مكتب نوت التابع لشركة طلبات ، و اللي هكون مع حضرتك الخميس بإذن الله في المحاضرة
+ببعت لحضرتك لتأكيد جديه الحضور الخميس
+بإذن الله المحاضرة هتكون في مقر شركة طلبات المهندسين 
+بعد كده ممنوع الدخول نهاااائي 
+و دا اللوكيشن 👇🏻👇🏻👇🏻📍
+https://maps.app.goo.gl/hd9Zb2DubiMCcjWT7
+
+
+📌يرجي احضار صورة البطاقة الشخصية وش و ضهر نسختين هااام جداا
+📌و عدم الحضور ببنطلون مقطع أو شبشب او صندل 👡
+"
+            title="نسخ اللوكيشن"
+          >
+            <i class="fa-regular fa-copy"></i>
+            <span>نسخ اللوكيشن</span>
+          </button>
+          <div class="lecture-card-body">
+            <div class="lecture-time-row">
+              <span class="lecture-area">المهندسين</span>
+              <span class="lecture-time"
+                ><i class="fa-regular fa-clock"></i> 11:00 صباحاً</span
+              >
+            </div>
+            <div class="lecture-time-row">
+              <span class="lecture-area">الهرم</span>
+              <span class="lecture-time"
+                ><i class="fa-regular fa-clock"></i> 12:00 ظهراً</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. الشروق -->
+        <div class="lecture-card">
+          <div class="lecture-card-header">
+            <i class="fa-solid fa-location-dot lecture-location-icon"></i>
+            <h3 class="lecture-city">الشروق</h3>
+          </div>
+          <!-- زر نسخ لوكيشن الشروق -->
+          <button
+            class="copy-location-btn"
+            data-location="مساء الخير يا فندم 
+مع حضرتك ا/ محمود شاكر 
+رقم التليفون: 01110140295
+ مسئول التعيينات في مكتب نوت التابع لشركة طلبات ، و اللي هكون مع حضرتك بكرا بإذن الله في المحاضرة
+ببعت لحضرتك لتأكيد جديه الحضور غداً 
+بإذن الله المحاضرة هتكون في مقر شركة طلبات ( الشروق ) 
+بعد كده ممنوع الدخول نهاااائي 
+و دا اللوكيشن 👇🏻👇🏻👇🏻📍
+ https://maps.app.goo.gl/JZtodi24secdPtSo7?g_st=iw
+
+📌يرجي احضار صورة البطاقة الشخصية وش و ضهر نسختين هااام جداا
+📌و عدم الحضور ببنطلون مقطع أو شبشب او صندل 👡
+"
+            title="نسخ اللوكيشن"
+          >
+            <i class="fa-regular fa-copy"></i>
+            <span>نسخ اللوكيشن</span>
+          </button>
+
+          <div class="lecture-card-body">
+            <div class="lecture-time-row">
+              <span class="lecture-area">المقر الرئيسي</span>
+              <span class="lecture-time"
+                ><i class="fa-regular fa-clock"></i> 2:00 ظهراً</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. التجمعات -->
+        <div class="lecture-card">
+          <div class="lecture-card-header">
+            <i class="fa-solid fa-location-dot lecture-location-icon"></i>
+            <h3 class="lecture-city">التجمعات</h3>
+          </div>
+          <!-- زر نسخ لوكيشن التجمع -->
+          <button
+            class="copy-location-btn"
+            data-location="مساء الخير يا فندم 
+مع حضرتك ا/عبدالرحمن احمد
+رقم التليفون: 01067559434
+ مسئول التعيينات في مكتب نوت التابع لشركة طلبات ، و اللي هكون مع حضرتك بكرا بإذن الله في المحاضرة
+ببعت لحضرتك لتأكيد جديه الحضور غداً 
+بإذن الله المحاضرة هتكون في مقر شركة طلبات (    التجمع    ) 
+بعد كده ممنوع الدخول نهاااائي 
+و دا اللوكيشن 👇🏻👇🏻👇🏻📍
+https://maps.app.goo.gl/QWy5ASmKAeQwWtdn6
+
+📌يرجي احضار صورة البطاقة الشخصية وش و ضهر نسختين هااام جداا
+📌و عدم الحضور ببنطلون مقطع أو شبشب او صندل 👡
+"
+            title="نسخ اللوكيشن"
+          >
+            <i class="fa-regular fa-copy"></i>
+            <span>نسخ اللوكيشن</span>
+          </button>
+
+          <div class="lecture-card-body">
+            <div class="lecture-time-row">
+              <span class="lecture-area">المقر الرئيسي</span>
+              <span class="lecture-time"
+                ><i class="fa-regular fa-clock"></i> 11:00 صباحاً</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. المعادي -->
+        <div class="lecture-card">
+          <div class="lecture-card-header">
+            <i class="fa-solid fa-location-dot lecture-location-icon"></i>
+            <h3 class="lecture-city">المعادي</h3>
+          </div>
+          <!-- زر نسخ لوكيشن المعادي  -->
+          <button
+            class="copy-location-btn"
+            data-location="مساء الخير يا فندم 
+مع حضرتك ا/ علي عثمان 
+رقم التليفون:  01145759788
+ مسئول التعيينات في مكتب نوت التابع لشركة طلبات ، و اللي هكون مع حضرتك بكرا بإذن الله في المحاضرة
+ببعت لحضرتك لتأكيد جديه الحضور غداً 
+بإذن الله المحاضرة هتكون في مقر شركة طلبات (   المعادى   ) 
+بعد كده ممنوع الدخول نهاااائي 
+و دا اللوكيشن 👇🏻👇🏻👇🏻📍
+https://maps.app.goo.gl/GffiuPUoMn8D4kZW8
+
+📌يرجي احضار صورة البطاقة الشخصية وش و ضهر نسختين هااام جداا
+📌و عدم الحضور ببنطلون مقطع أو شبشب او صندل 👡
+"
+            title="نسخ اللوكيشن"
+          >
+            <i class="fa-regular fa-copy"></i>
+            <span>نسخ اللوكيشن</span>
+          </button>
+
+          <div class="lecture-card-body">
+            <div class="lecture-time-row">
+              <span class="lecture-area">المقر الرئيسي</span>
+              <span class="lecture-time"
+                ><i class="fa-regular fa-clock"></i> 2:00 ظهراً</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. أكتوبر -->
+        <div class="lecture-card">
+          <div class="lecture-card-header">
+            <i class="fa-solid fa-location-dot lecture-location-icon"></i>
+            <h3 class="lecture-city">أكتوبر</h3>
+          </div>
+
+          <!-- زر نسخ لوكيشن اكتوبر -->
+          <button
+            class="copy-location-btn"
+            data-location="مساء الخير يا فندم 
+مع حضرتك ا/  يوسف أحمد 
+رقم التليفون:  01154096088
+ مسئول التعيينات في مكتب نوت التابع لشركة طلبات ، و اللي هكون مع حضرتك  بإذن الله في المحاضرة 
+ببعت لحضرتك لتأكيد جديه الحضور غداً 
+بإذن الله المحاضرة هتكون في مقر شركة طلبات (   اكتوبر الحصرى   ) 
+بعد كده ممنوع الدخول نهاااائي  بعد المعاد المحدد 
+و دا اللوكيشن 👇🏻👇🏻👇🏻📍
+https://maps.app.goo.gl/5fA1WHXt2vXyZAQv8?g_st=aw
+
+
+📌يرجي احضار صورة البطاقة الشخصية وش و ضهر نسختين هااام جداا
+📌و عدم الحضور ببنطلون مقطع أو شبشب او صندل 👡
+"
+            title="نسخ اللوكيشن"
+          >
+            <i class="fa-regular fa-copy"></i>
+            <span>نسخ اللوكيشن</span>
+          </button>
+          <div class="lecture-card-body">
+            <div class="lecture-time-row">
+              <span class="lecture-area">المقر الرئيسي</span>
+              <span class="lecture-time"
+                ><i class="fa-regular fa-clock"></i> 11:00 صباحاً</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. مدينة نصر -->
+        <div class="lecture-card">
+          <div class="lecture-card-header">
+            <i class="fa-solid fa-location-dot lecture-location-icon"></i>
+            <h3 class="lecture-city">مدينة نصر</h3>
+          </div>
+          <!-- زر نسخ لوكيشن مدينه نصر -->
+          <button
+            class="copy-location-btn"
+            data-location="مساء الخير يا فندم 
+مع حضرتك ا/ معوض فراج
+رقم التليفون: 01125663978
+ مسئول التعيينات في مكتب نوت التابع لشركة طلبات ، و اللي هكون مع حضرتك بكرا بإذن الله في المحاضرة 
+ببعت لحضرتك لتأكيد جديه الحضور غداً 
+بإذن الله المحاضرة هتكون في مقر شركة طلبات ( مدينه نصر ) 
+بعد كده ممنوع الدخول نهاااائي 
+و دا اللوكيشن 👇🏻👇🏻👇🏻📍
+https://maps.app.goo.gl/sUeXbvKRRaNirWso9
+📌يرجي احضار صورة البطاقة الشخصية وش و ضهر نسختين هااام جداا
+📌و عدم الحضور ببنطلون مقطع أو شبشب او صندل 👡
+"
+            title="نسخ اللوكيشن"
+          >
+            <i class="fa-regular fa-copy"></i>
+            <span>نسخ اللوكيشن</span>
+          </button>
+          <div class="lecture-card-body">
+            <div class="lecture-time-row">
+              <span class="lecture-days">السبت والإثنين</span>
+              <span class="lecture-time"
+                ><i class="fa-regular fa-clock"></i> 3:00 عصراً</span
+              >
+            </div>
+            <div class="lecture-time-row">
+              <span class="lecture-days">الثلاثاء، الأربعاء، الخميس</span>
+              <span class="lecture-time"
+                ><i class="fa-regular fa-clock"></i> 12:00 ظهراً</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. الإسكندرية (استثناء خاص بالأيام) -->
+        <div class="lecture-card lecture-card-special">
+          <div class="lecture-card-header">
+            <i class="fa-solid fa-location-dot lecture-location-icon"></i>
+            <h3 class="lecture-city">الإسكندرية</h3>
+          </div>
+
+          <!-- زر نسخ لوكيشن اسكندريه -->
+          <button
+            class="copy-location-btn"
+            data-location="مساء الخير….معاك 
+زياد 
++20 12 80349320
+مشرف مكتب Noot ال هيبقي معاك بكره في المحاضره
+المحاضره بكره الساعه (12:30)
+هامممم👇🏻👇🏻👇🏻
+{التلفون لازم يكون مشحون بطاريه و نت}
+ملحوظه: التأخير عن المعاد يمنعك من دخول المحاضره❌❌❌
+الحضور ببنطلون ممنوع الحضور ب شبشب او سليبر
+مكان المحاضره:محطه ترام سابا باشا
+لوكيشن المحاضره👇🏻👇🏻👇🏻
+https://maps.app.goo.gl/bHYJjUczQWHhpTE18?g_st=ipc
+لوكيشن الجراچ👇🏻👇🏻👇🏻
+https://maps.app.goo.gl/U8ePVCWkC3z89Edd6?g_st=ipc
+•تعيين اول مره للمكن 👈🏻 البطاقه + رخصه المكنه 
+•أعاده التفعيل للمكن 👈🏻 البطاقه + رخصه المكنه + الرخصه الشخصيه 
+•تعيين العجل 👈🏻  البطاقهمساء الخير….معاك 
+زياد 
++20 12 80349320
+مشرف مكتب Noot ال هيبقي معاك بكره في المحاضره
+المحاضره بكره الساعه (12:30)
+هامممم👇🏻👇🏻👇🏻
+{التلفون لازم يكون مشحون بطاريه و نت}
+ملحوظه: التأخير عن المعاد يمنعك من دخول المحاضره❌❌❌
+الحضور ببنطلون ممنوع الحضور ب شبشب او سليبر
+مكان المحاضره:محطه ترام سابا باشا
+لوكيشن المحاضره👇🏻👇🏻👇🏻
+https://maps.app.goo.gl/bHYJjUczQWHhpTE18?g_st=ipc
+لوكيشن الجراچ👇🏻👇🏻👇🏻
+https://maps.app.goo.gl/U8ePVCWkC3z89Edd6?g_st=ipc
+•تعيين اول مره للمكن 👈🏻 البطاقه + رخصه المكنه 
+•أعاده التفعيل للمكن 👈🏻 البطاقه + رخصه المكنه + الرخصه الشخصيه 
+•تعيين العجل 👈🏻  البطاقه
+"
+            title="نسخ اللوكيشن"
+          >
+            <i class="fa-regular fa-copy"></i>
+            <span>نسخ اللوكيشن</span>
+          </button>
+          <div class="lecture-card-body">
+            <div class="lecture-time-row">
+              <span class="lecture-area">المقر الرئيسي</span>
+              <span class="lecture-time"
+                ><i class="fa-regular fa-clock"></i> 12:30 ظهراً</span
+              >
+            </div>
+            <div class="lecture-days-tag warning">
+              <i class="fa-regular fa-calendar-xmark"></i> إجازة: الجمعة والسبت
+            </div>
+          </div>
+        </div>
+
+        <!-- 8. طنطا -->
+        <div class="lecture-card">
+          <div class="lecture-card-header">
+            <i class="fa-solid fa-location-dot lecture-location-icon"></i>
+            <h3 class="lecture-city">طنطا</h3>
+          </div>
+          <!-- زر نسخ لوكيشن طنطا -->
+          <button
+            class="copy-location-btn"
+            data-location="مساء الخير يا فندم 
+مع حضرتك ا/ بلال
+رقم التليفون:01207947179
+ مسئول التعيينات في مكتب نوت التابع لشركة طلبات ، و اللي هكون مع حضرتك بكرا بإذن الله في المحاضرة 
+ببعت لحضرتك لتأكيد جديه الحضور غداً 
+بإذن الله المحاضرة هتكون في مقر شركة طلبات (  المنصوره  ) 
+بعد كده ممنوع الدخول نهاااائي 
+و دا اللوكيشن 👇🏻👇🏻👇🏻📍
+https://maps.app.goo.gl/5mhguP8ZWU9aL8EJ8?g_st=ac
+📌يرجي احضار صورة البطاقة الشخصية وش و ضهر نسختين هااام جداا
+📌و عدم الحضور ببنطلون مقطع أو شبشب او صندل 👡
+"
+            title="نسخ اللوكيشن"
+          >
+            <i class="fa-regular fa-copy"></i>
+            <span>نسخ اللوكيشن</span>
+          </button>
+
+          <div class="lecture-card-body">
+            <div class="lecture-time-row">
+              <span class="lecture-days">السبت والثلاثاء فقط</span>
+              <span class="lecture-time"
+                ><i class="fa-regular fa-clock"></i> 12:00 ظهراً</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- 9. المنصورة -->
+        <div class="lecture-card">
+          <div class="lecture-card-header">
+            <i class="fa-solid fa-location-dot lecture-location-icon"></i>
+            <h3 class="lecture-city">المنصورة</h3>
+          </div>
+          <!-- زر نسخ لوكيشن المنصوره -->
+          <button
+            class="copy-location-btn"
+            data-location="مساء الخير يا فندم 
+مع حضرتك ا/ حمدى البندراوى
+رقم التليفون:01035171186
+ مسئول التعيينات في مكتب نوت التابع لشركة طلبات ، و اللي هكون مع حضرتك بكرا بإذن الله في المحاضرة 
+ببعت لحضرتك لتأكيد جديه الحضور غداً 
+بإذن الله المحاضرة هتكون في مقر شركة طلبات (  المنصوره  ) 
+بعد كده ممنوع الدخول نهاااائي 
+و دا اللوكيشن 👇🏻👇🏻👇🏻📍
+https://maps.app.goo.gl/5mhguP8ZWU9aL8EJ8?g_st=ac
+📌يرجي احضار صورة البطاقة الشخصية وش و ضهر نسختين هااام جداا
+📌و عدم الحضور ببنطلون مقطع أو شبشب او صندل 👡
+"
+            title="نسخ اللوكيشن"
+          >
+            <i class="fa-regular fa-copy"></i>
+            <span>نسخ اللوكيشن</span>
+          </button>
+
+          <div class="lecture-card-body">
+            <div class="lecture-time-row">
+              <span class="lecture-days">الإثنين والخميس فقط</span>
+              <span class="lecture-time"
+                ><i class="fa-regular fa-clock"></i> 1:00 ظهراً</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- 10. المحلة -->
+        <div class="lecture-card">
+          <div class="lecture-card-header">
+            <i class="fa-solid fa-location-dot lecture-location-icon"></i>
+            <h3 class="lecture-city">المحلة</h3>
+          </div>
+
+          <button
+            class="copy-location-btn"
+            data-location="مساء الخير يا فندم 
+مع حضرتك ا/ دياب 
+رقم التليفون:01276275766
+ مسئول التعيينات في مكتب نوت التابع لشركة طلبات ، و اللي هكون مع حضرتك بكرا بإذن الله في المحاضرة 
+ببعت لحضرتك لتأكيد جديه الحضور غداً 
+بإذن الله المحاضرة هتكون في مقر شركة طلبات (  المنصوره  ) 
+بعد كده ممنوع الدخول نهاااائي 
+و دا اللوكيشن 👇🏻👇🏻👇🏻📍
+https://maps.app.goo.gl/5mhguP8ZWU9aL8EJ8?g_st=ac
+📌يرجي احضار صورة البطاقة الشخصية وش و ضهر نسختين هااام جداا
+📌و عدم الحضور ببنطلون مقطع أو شبشب او صندل 👡
+"
+            title="نسخ اللوكيشن"
+          >
+            <i class="fa-regular fa-copy"></i>
+            <span>نسخ اللوكيشن</span>
+          </button>
+
+          <div class="lecture-card-body">
+            <div class="lecture-time-row">
+              <span class="lecture-days">السبت</span>
+              <span class="lecture-time"
+                ><i class="fa-regular fa-clock"></i> 2:00 ظهراً</span
+              >
+            </div>
+            <div class="lecture-time-row">
+              <span class="lecture-days">الأربعاء</span>
+              <span class="lecture-time"
+                ><i class="fa-regular fa-clock"></i> 12:30 ظهراً</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ==========================================
+     قسم أفرع العمل ومقرات السكن (#locations)
+     ========================================== -->
+    <section id="locations" class="locations-section">
+      <!-- رأس القسم -->
+      <div class="locations-header">
+        <div class="locations-title-wrapper">
+          <i class="fa-solid fa-map-location-dot locations-title-icon"></i>
+          <h2 class="locations-title">مناطق العمل وتفاصيل السكن</h2>
+        </div>
+        <p class="locations-subtitle">
+          دليل نطاقات التوزيع والتوصيل المتاحة ومقرات السكن المغطاة للطيارين
+        </p>
+      </div>
+
+      <!-- جدول / شبكة اللوكيشنات والسكن -->
+      <div class="locations-container">
+        <table class="locations-table">
+          <thead>
+            <tr>
+              <th><i class="fa-solid fa-city"></i> منطقة / نطاق العمل</th>
+              <th>
+                <i class="fa-solid fa-house-chimney"></i> حالة وتفاصيل السكن
+              </th>
+              <th><i class="fa-solid fa-circle-check"></i> التوفر</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- 1. مدينتي والشروق -->
+            <tr>
+              <td>
+                <div class="zone-name">مدينتي والشروق</div>
+              </td>
+              <td>
+                <div class="housing-info available">
+                  <i class="fa-solid fa-bed"></i>
+                  <span>السكن في <strong>مدينة بدر</strong></span>
+                </div>
+              </td>
+              <td>
+                <span class="status-badge badge-success"
+                  ><i class="fa-solid fa-check"></i> سكن متوفر</span
+                >
+              </td>
+            </tr>
+
+            <!-- 2. مدينة نصر ومصر الجديدة وعين شمس -->
+            <tr>
+              <td>
+                <div class="zone-name">مدينة نصر، مصر الجديدة، وعين شمس</div>
+              </td>
+              <td>
+                <div class="housing-info available">
+                  <i class="fa-solid fa-bed"></i>
+                  <span>السكن في <strong>زهراء مدينة نصر</strong></span>
+                </div>
+              </td>
+              <td>
+                <span class="status-badge badge-success"
+                  ><i class="fa-solid fa-check"></i> سكن متوفر</span
+                >
+              </td>
+            </tr>
+
+            <!-- 3. التجمع الشمالي -->
+            <tr>
+              <td>
+                <div class="zone-name">التجمع الشمالي</div>
+              </td>
+              <td>
+                <div class="housing-info available">
+                  <i class="fa-solid fa-bed"></i>
+                  <span>السكن في <strong>زهراء مدينة نصر</strong></span>
+                </div>
+              </td>
+              <td>
+                <span class="status-badge badge-success"
+                  ><i class="fa-solid fa-check"></i> سكن متوفر</span
+                >
+              </td>
+            </tr>
+
+            <!-- 4. أكتوبر وبالم هيلز -->
+            <tr>
+              <td>
+                <div class="zone-name">أكتوبر وبالم هيلز</div>
+              </td>
+              <td>
+                <div class="housing-info available">
+                  <i class="fa-solid fa-bed"></i>
+                  <span>السكن في <strong>6 أكتوبر</strong></span>
+                </div>
+              </td>
+              <td>
+                <span class="status-badge badge-success"
+                  ><i class="fa-solid fa-check"></i> سكن متوفر</span
+                >
+              </td>
+            </tr>
+
+            <!-- 5. الشيخ زايد -->
+            <tr>
+              <td>
+                <div class="zone-name">الشيخ زايد</div>
+              </td>
+              <td>
+                <div class="housing-info available">
+                  <i class="fa-solid fa-bed"></i>
+                  <span>السكن في <strong>الشيخ زايد</strong></span>
+                </div>
+              </td>
+              <td>
+                <span class="status-badge badge-success"
+                  ><i class="fa-solid fa-check"></i> سكن متوفر</span
+                >
+              </td>
+            </tr>
+
+            <!-- 6. المهندسين والهرم -->
+            <tr>
+              <td>
+                <div class="zone-name">المهندسين والهرم</div>
+              </td>
+              <td>
+                <div class="housing-info unavailable">
+                  <i class="fa-solid fa-house-circle-xmark"></i>
+                  <span>لا يتوفر سكن مغطى</span>
+                </div>
+              </td>
+              <td>
+                <span class="status-badge badge-none"
+                  ><i class="fa-solid fa-xmark"></i> بدون سكن</span
+                >
+              </td>
+            </tr>
+
+            <!-- 7. المعادي -->
+            <tr>
+              <td>
+                <div class="zone-name">المعادي</div>
+              </td>
+              <td>
+                <div class="housing-info unavailable">
+                  <i class="fa-solid fa-house-circle-xmark"></i>
+                  <span>لا يتوفر سكن مغطى</span>
+                </div>
+              </td>
+              <td>
+                <span class="status-badge badge-none"
+                  ><i class="fa-solid fa-xmark"></i> بدون سكن</span
+                >
+              </td>
+            </tr>
+
+            <!-- 8. الإسكندرية -->
+            <tr>
+              <td>
+                <div class="zone-name">الإسكندرية</div>
+              </td>
+              <td>
+                <div class="housing-info unavailable">
+                  <i class="fa-solid fa-house-circle-xmark"></i>
+                  <span>لا يتوفر سكن مغطى</span>
+                </div>
+              </td>
+              <td>
+                <span class="status-badge badge-none"
+                  ><i class="fa-solid fa-xmark"></i> بدون سكن</span
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <div class="bonuses-container" id="bonuses">
+      <!-- العرض الأول -->
+      <div class="bonus-card">
+        <button class="copy-btn" onclick="copyBonus('bonus1', this)">
+          📋 نسخ العرض
+        </button>
+        <div id="bonus1" class="bonus-text">
+          🎁 <b>مميزات الشغل معانا - بونص ترحيبي 3000 جنيه</b><br /><br />
+          تقدر تحصل على البونص على شهرين بالشروط التالية:<br /><br />
+          🗓️ <b>الشهر الأول:</b><br />
+          - اشتغل 26 يوم.<br />
+          - حقق 350 أوردر.<br />
+          - تستلم 1500 جنيه (1250 جنيه من شركة طلبات + 250 جنيه من مكتب نوت).<br /><br />
+          🗓️ <b>الشهر الثاني:</b><br />
+          - اشتغل 26 يوم.<br />
+          - حقق 350 أوردر.<br />
+          - تستلم 1500 جنيه من المكتب.<br /><br />
+          🛢️ <b>بونص زيت لمدة 3 شهور:</b><br />
+          - 12 جركن زيت مجانًا (جركن كل أسبوع عند تحقيق 60 ساعة عمل).<br /><br />
+          🛡️️ <b>المستندات والأمان:</b><br />
+          - الاستعلام الأمني مجاني بالكامل.<br />
+          - يوجد إيصال أمانة بقيمة 15,000 جنيه كإجراء إداري لضمان العهدة، ويتم
+          إلغاؤه فور انتهاء العمل وتسليم العهدة كاملة.
+        </div>
+      </div>
+
+      <!-- العرض الثاني -->
+      <div class="bonus-card">
+        <button class="copy-btn" onclick="copyBonus('bonus2', this)">
+          📋 نسخ العرض
+        </button>
+        <div id="bonus2" class="bonus-text">
+          🔥 <b>مميزات الشغل معانا - بونص الدلتا 1500 جنيه</b><br /><br />
+          تقدر تحصل على البونص على شهرين بالشروط التالية:<br /><br />
+          ✅ <b>الشهر الأول:</b><br />
+          - اشتغل 26 يوم.<br />
+          - حقق 350 أوردر.<br />
+          - تستلم 750 جنيه.<br /><br />
+          ✅ <b>الشهر الثاني:</b><br />
+          - اشتغل 26 يوم.<br />
+          - حقق 350 أوردر.<br />
+          - تستلم 750 جنيه من المكتب.<br /><br />
+          🛢️ <b>بونص زيت لمدة 3 شهور:</b><br />
+          🎁 هتاخد 12 جركن زيت مجانًا.<br />
+          ✅ كل أسبوع تحقق 60 ساعة عمل تستلم جركن زيت.<br /><br />
+          📝 <b>المستندات والأمان:</b><br />
+          - الاستعلام الأمني مجاني بالكامل.<br />
+          - يوجد إيصال أمانة بقيمة 15,000 جنيه كإجراء إداري لضمان العهدة، ويتم
+          إلغاؤه فور انتهاء العمل وتسليم العهدة كاملة.
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================
+       4. الفوتر (Footer)
+       ========================================== -->
+    <footer class="main-footer">
+      <div class="footer-container">
+        <!-- شعار الفوتر -->
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <i class="fa-solid fa-motorcycle text-sm"></i>
+            <span>NOOT</span>
+          </div>
+          <span class="footer-separator">|</span>
+          <span class="footer-subtext">DELIVERY SERVICE</span>
+        </div>
+
+        <!-- نص الشراكة -->
+        <div class="footer-partner-tag">
+          <span class="footer-line"></span>
+          <span>Delivery at Talabat</span>
+          <span class="footer-line"></span>
+        </div>
+
+        <!-- العبارة الختامية -->
+        <div class="footer-slogan">
+          <span>إلى الأمام دائماً</span>
+          <i class="fa-solid fa-chevron-left text-xs"></i>
+        </div>
+      </div>
+    </footer>
+
+    <!-- زر العودة للأعلى -->
+    <button id="backToTop" class="back-to-top" aria-label="العودة للأعلى">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="Main.js"></script>
+  </body>
+</html>
