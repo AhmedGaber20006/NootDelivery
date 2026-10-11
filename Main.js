@@ -137,3 +137,31 @@ function copyBonus(elementId, btn) {
     console.error('فشل النسخ: ', err);
   });
 }
+
+function copyZoneText(element) {
+  // جلب النص المخصص المخزن داخل الـ data-copy
+  const textToCopy = element.getAttribute('data-copy');
+
+  navigator.clipboard.writeText(textToCopy).then(() => {
+    // حفظ الشكل الأصلي للـ Tag
+    const originalText = element.innerText;
+    const originalBg = element.style.backgroundColor;
+
+    // تغيير المظهر مؤقتاً لتأكيد النسخ
+    element.innerText = "✅ تم النسخ";
+    element.style.backgroundColor = "#10b981"; // لون أخضر نجاح
+    element.style.color = "#ffffff";
+    element.style.borderColor = "#10b981";
+
+    // إرجاع الشكل الأصلي بعد ثانيتين
+    setTimeout(() => {
+      element.innerText = originalText;
+      element.style.backgroundColor = originalBg;
+      element.style.color = "";
+      element.style.borderColor = "";
+    }, 1500);
+
+  }).catch(err => {
+    console.error('فشل النسخ: ', err);
+  });
+}
