@@ -165,3 +165,73 @@ function copyZoneText(element) {
     console.error('فشل النسخ: ', err);
   });
 }
+
+
+// ==========================================================================
+// 1. دالة حساب تاريخ الغد بتنسيق DD/MM/YYYY
+// ==========================================================================
+function getTomorrowFormatted() {
+  const tomorrow = new Date();
+  tomorrow.setDate(tomorrow.getDate() + 1);
+  const day = String(tomorrow.getDate()).padStart(2, '0');
+  const month = String(tomorrow.getMonth() + 1).padStart(2, '0');
+  const year = tomorrow.getFullYear();
+  return `${day}/${month}/${year}`;
+}
+
+// ==========================================================================
+// 2. عند تحميل الصفحة: تعبئة تاريخ الغد وتثبيت التوجيهات
+// ==========================================================================
+document.addEventListener('DOMContentLoaded', () => {
+  const tomorrowStr = getTomorrowFormatted();
+  
+  // تحديث خانات تاريخ الغد في كافة الأقسام تلقائياً
+  document.querySelectorAll('.tomorrow-date-display').forEach(el => {
+    el.innerHTML = `<i class="fa-regular fa-calendar-check"></i> غداً: ${tomorrowStr}`;
+  });
+
+  // تهيئة شاشات استعلام المشرفين
+  updateSupervisorGuide();
+});
+
+// ==========================================================================
+// 3. التنقل بين أقسام المكاتب في الناف بار
+// ==========================================================================
+function switchInquiryTab(event, paneId) {
+  const panes = document.querySelectorAll('.inquiry-content-pane');
+  const navItems = document.querySelectorAll('.inquiry-nav-item');
+
+  // إخفاء كل المحتويات وإلغاء تفعيل الأزرار
+  panes.forEach(pane => pane.classList.remove('active'));
+  navItems.forEach(item => item.classList.remove('active'));
+
+  // تفعيل القسم والزر المختار
+  document.getElementById(paneId).classList.add('active');
+  event.currentTarget.classList.add('active');
+}
+
+// ==========================================================================
+// 4. التحديث التلقائي لاسم مدير التشغيل حسب المنطقة المختارة
+// ==========================================================================
+function updateSupervisorGuide() {
+  const regionSelect = document.getElementById('regionSelect');
+  if (!regionSelect) return;
+
+  const region = regionSelect.value;
+  const managerVal = document.getElementById('dynamicManagerVal');
+  const managerDesc = document.getElementById('dynamicManagerDesc');
+
+  if (region === "معادي") {
+    managerVal.textContent = "فؤاد";
+    managerDesc.textContent = "مدير تشغيل المعادي ومدينه نصر والجيزه";
+  } else if (region === "الشروق") {
+    managerVal.textContent = "أحمد نوت";
+    managerDesc.textContent = "مدير تشغيل الشروق ومدينتي";
+  } else if (region === "طنطا") {
+    managerVal.textContent = "علي حسن";
+    managerDesc.textContent = "مدير تشغيل طنطا والمحله والمنصوره";
+  } else {
+    managerVal.textContent = "أحمد نبيل أو زياد";
+    managerDesc.textContent = "مديرين تشغيل اكتوبر والشيخ زايد وبالم هيلز وتجمع";
+  }
+}

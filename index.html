@@ -64,7 +64,7 @@
             <i class="fa-solid fa-bullhorn nav-icon"></i>
             <span>مشرفين الارضيه</span>
           </a>
-          <a class="nav-link" href="#supervisor-inquiry">
+          <a class="nav-link" href="#supervisors-inquiry">
             <i class="fa-solid fa-magnifying-glass nav-icon"></i>
             <span>استعلام مشرفين ومكاتب</span>
           </a>
@@ -188,7 +188,7 @@
         </a>
 
         <!-- كارت 6: استعلام مشرفين -->
-        <a class="service-card" href="#supervisor-inquiry">
+        <a class="service-card" href="#supervisors-inquiry">
           <div class="service-card-icon-wrapper">
             <i class="fa-solid fa-magnifying-glass text-2xl"></i>
           </div>
@@ -402,7 +402,7 @@ https://maps.app.goo.gl/QWy5ASmKAeQwWtdn6
             <div class="lecture-time-row">
               <span class="lecture-area">المقر الرئيسي</span>
               <span class="lecture-time"
-                ><i class="fa-regular fa-clock"></i> 2:00 صباحاً</span
+                ><i class="fa-regular fa-clock"></i> 2:00 ظهراً</span
               >
             </div>
           </div>
@@ -1859,6 +1859,63 @@ Name (4)in English_Noot_BC
                   ><i class="fa-solid fa-bullhorn"></i> مشرف أرضية (تسويق)</span
                 >
               </td>
+              <!-- المعادي -->
+                           <tr>
+              <td>
+                <div class="zones-list">
+                  <span
+                    class="zone-tag"
+                    onclick="copyZoneText(this)"
+                    data-copy="منطقة المعادي - مشرف الأرضية والتسويق: مصطفي زاجل"
+                    >المعادي</span
+                  >
+                </div>
+              </td>
+              <td>
+                <div class="supervisor-info">
+                  <div class="supervisor-avatar">
+                    <i class="fa-solid fa-user-tie"></i>
+                  </div>
+                  <span class="supervisor-name">مصطفي زاجل</span>
+                </div>
+              </td>
+              <td>
+                <span class="marketing-badge"
+                  ><i class="fa-solid fa-bullhorn"></i> مشرف أرضية (تسويق)</span
+                >
+              </td>
+            </tr>
+
+            <!-- التجمع -->
+                         <tr>
+              <td>
+                <div class="zones-list">
+                  <span
+                    class="zone-tag"
+                    onclick="copyZoneText(this)"
+                    data-copy="منطقة التجمع - مشرف الأرضية والتسويق: عبدالرحمن احمد"
+                    >التجمع</span
+                  >
+                </div>
+              </td>
+              <td>
+                <div class="supervisor-info">
+                  <div class="supervisor-avatar">
+                    <i class="fa-solid fa-user-tie"></i>
+                  </div>
+                  <span class="supervisor-name">عبدالرحمن احمد</span>
+                </div>
+              </td>
+              <td>
+                <span class="marketing-badge"
+                  ><i class="fa-solid fa-bullhorn"></i> مشرف أرضية (تسويق)</span
+                >
+              </td>
+            </tr>
+
+
+
+
             </tr>
             <!-- طنطا -->
             <tr>
@@ -1945,6 +2002,187 @@ Name (4)in English_Noot_BC
         </table>
       </div>
     </section>
+    <!-- ====== -->
+    <!-- ==========================================
+     قسم استعلام مشرفين ومكاتب (#supervisors-inquiry)
+     ========================================== -->
+<section  id="supervisors-inquiry" class="review-section" >
+  
+  <div class="review-header">
+    <div class="review-title-wrapper">
+      <i class="fa-solid fa-clipboard-user review-title-icon"></i>
+      <h2 class="review-title">استعلام مشرفين ومكاتب</h2>
+    </div>
+    <p class="review-subtitle">دليل الشرح التوضيحي المباشر لكل مكتب واستعلام </p>
+  </div>
+
+  <div class="review-container">
+    
+    <!-- ناف بار التنقل بين الأقسام -->
+    <nav class="inquiry-navbar">
+      <button class="inquiry-nav-item active" onclick="switchInquiryTab(event, 'officeAhmad')">
+        <i class="fa-solid fa-building"></i> 1. مكتب أحمد نوت
+      </button>
+      <button class="inquiry-nav-item" onclick="switchInquiryTab(event, 'officeEssam')">
+        <i class="fa-solid fa-building-shield"></i> 2. مكتب عصام نوت
+      </button>
+      <button class="inquiry-nav-item" onclick="switchInquiryTab(event, 'supervisorsQuery')">
+        <i class="fa-solid fa-user-tie"></i> 3. استعلام مشرفين
+      </button>
+    </nav>
+
+    <!-- 1. مكتب أحمد نوت -->
+    <div id="officeAhmad" class="inquiry-content-pane active">
+      <div class="form-block">
+        <div class="pane-header-row">
+          <h3 class="block-title"><i class="fa-solid fa-building"></i> الشرح والتوجيه الخاص بـ (مكتب أحمد نوت)</h3>
+          <span class="note-tag">📌 ملحوظة: مبنرفعلوش استعلام إلا لو قال.</span>
+        </div>
+
+        <div class="explain-cards-grid">
+          <div class="explain-card highlight-card">
+            <div class="explain-label"><i class="fa-regular fa-calendar-days"></i> تاريخ المحاضرة</div>
+            <div class="explain-value tomorrow-date-display">جاري الحساب...</div>
+            <div class="explain-desc">يتم اختيار تاريخ غد دائما في النموذج.</div>
+          </div>
+
+          <div class="explain-card">
+            <div class="explain-label"><i class="fa-solid fa-user-pen"></i> اسم المعين</div>
+            <div class="explain-value">اسمك</div>
+            <div class="explain-desc">اختر اسمك الخاص من القائمة .</div>
+          </div>
+
+          <div class="explain-card">
+            <div class="explain-label"><i class="fa-solid fa-user-gear"></i> مدير التشغيل والمشرف</div>
+            <div class="explain-value">أحمد نوت</div>
+            <div class="explain-desc">يتم اختيار "أحمد نوت" للخانتين.</div>
+          </div>
+
+          <div class="explain-card">
+            <div class="explain-label"><i class="fa-solid fa-comment-dots"></i> الملاحظات</div>
+            <div class="explain-value">عادل نوت</div>
+            <div class="explain-desc">يكتب عادل نوت في خانة الملاحظات.</div>
+          </div>
+
+          <div class="explain-card">
+            <div class="explain-label"><i class="fa-solid fa-gift"></i> بونص</div>
+            <div class="explain-value">بدون</div>
+            <div class="explain-desc">اختر خيار "بدون" من القائمة .</div>
+          </div>
+
+          <div class="explain-card">
+            <div class="explain-label"><i class="fa-solid fa-clock"></i> عدد الساعات المتفق عليه</div>
+            <div class="explain-value">8 ساعات</div>
+            <div class="explain-desc">اختر 8 ساعات.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. مكتب عصام نوت -->
+    <div id="officeEssam" class="inquiry-content-pane">
+      <div class="form-block">
+        <div class="pane-header-row">
+          <h3 class="block-title"><i class="fa-solid fa-building-shield"></i> الشرح والتوجيه الخاص بـ (مكتب عصام نوت)</h3>
+          <span class="note-tag success-tag">📌 ملحوظة: بنرفعله استعلام.</span>
+        </div>
+
+        <div class="explain-cards-grid">
+          <div class="explain-card highlight-card">
+            <div class="explain-label"><i class="fa-regular fa-calendar-days"></i> تاريخ المحاضرة</div>
+            <div class="explain-value tomorrow-date-display">جاري الحساب...</div>
+            <div class="explain-desc">يتم اختيار تاريخ غدٍ دائماً في النموذج.</div>
+          </div>
+
+          <div class="explain-card">
+            <div class="explain-label"><i class="fa-solid fa-user-pen"></i> اسم المعين</div>
+            <div class="explain-value">اسمك</div>
+            <div class="explain-desc">اختر اسمك الخاص من القائمة .</div>
+          </div>
+
+          <div class="explain-card">
+            <div class="explain-label"><i class="fa-solid fa-user-gear"></i> مدير التشغيل / المشرف / الملاحظات</div>
+            <div class="explain-value">عصام نوت</div>
+            <div class="explain-desc">يتم اختيار "عصام نوت" في الثلاث خانات.</div>
+          </div>
+
+          <div class="explain-card">
+            <div class="explain-label"><i class="fa-solid fa-gift"></i> بونص</div>
+            <div class="explain-value">بدون</div>
+            <div class="explain-desc">اختر خيار "بدون".</div>
+          </div>
+
+          <div class="explain-card">
+            <div class="explain-label"><i class="fa-solid fa-clock"></i> عدد الساعات المتفق عليه</div>
+            <div class="explain-value">8 ساعات</div>
+            <div class="explain-desc">اختر 8 ساعات.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. استعلام مشرفين -->
+    <div id="supervisorsQuery" class="inquiry-content-pane">
+      <div class="form-block">
+        <div class="pane-header-row">
+          <h3 class="block-title"><i class="fa-solid fa-user-tie"></i> الشرح والتوجيه الخاص بـ (استعلام مشرفين)</h3>
+          <span class="note-tag success-tag">📌 ملحوظة: بنرفعله استعلام.</span>
+        </div>
+
+        <!-- أداة تحديد المنطقة -->
+        <div class="region-selector-box">
+          <label for="regionSelect"><i class="fa-solid fa-map-location-dot"></i> حدد المنطقة لمعرفة مدير التشغيل المسؤول تلقائياً:</label>
+          <select id="regionSelect" class="region-dropdown" onchange="updateSupervisorGuide()">
+            <option value="اكتوبر">أكتوبر / الشيخ زايد / بالم هيلز / التجمع</option>
+            <option value="معادي">المعادي / مدينة نصر / الجيزة</option>
+            <option value="الشروق">الشروق / مدينتي</option>
+            <option value="طنطا">طنطا / المحلة / المنصورة</option>
+          </select>
+        </div>
+
+        <div class="explain-cards-grid">
+          <div class="explain-card highlight-card">
+            <div class="explain-label"><i class="fa-regular fa-calendar-days"></i> تاريخ المحاضرة</div>
+            <div class="explain-value tomorrow-date-display">جاري الحساب...</div>
+            <div class="explain-desc">تاريخ الغد التلقائي.</div>
+          </div>
+
+          <div class="explain-card">
+            <div class="explain-label"><i class="fa-solid fa-user-pen"></i> اسم المعين</div>
+            <div class="explain-value">مشرفين المكتب</div>
+            <div class="explain-desc">اختر "مشرفين المكتب" من القائمة .</div>
+          </div>
+
+          <div class="explain-card highlight-card">
+            <div class="explain-label"><i class="fa-solid fa-user-tie"></i> مدير التشغيل</div>
+            <div class="explain-value" id="dynamicManagerVal">أحمد نبيل أو زياد</div>
+            <div class="explain-desc" id="dynamicManagerDesc">حسب المنطقة المختارة أعلاه.</div>
+          </div>
+
+          <div class="explain-card">
+            <div class="explain-label"><i class="fa-solid fa-user-check"></i> المشرف</div>
+            <div class="explain-value">اسم مشرف المكتب</div>
+            <div class="explain-desc">لو مش موجود بنكتب (مشرف الأرضية).</div>
+          </div>
+
+          <div class="explain-card">
+            <div class="explain-label"><i class="fa-solid fa-comment-dots"></i> الملاحظات</div>
+            <div class="explain-value">اسمك (اسم المشرف)</div>
+            <div class="explain-desc">اكتب اسمك و اسم المشرف.</div>
+          </div>
+
+          <div class="explain-card">
+            <div class="explain-label"><i class="fa-solid fa-gift"></i> بونص والساعات</div>
+            <div class="explain-value">بدون | 8 ساعات</div>
+            <div class="explain-desc">البونص: بدون، والساعات: 8 ساعات.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
     <!-- ====== -->
      
 <!-- ========= -->

@@ -1802,3 +1802,298 @@ html {
   font-weight: 700;
 }
 /* ====== */
+
+/* ==========================================================================
+   تنسيقات الخلفية والمظهر الزجاجي الفخم (Glassmorphism & Darkness)
+   ========================================================================== */
+
+/* ==========================================================================
+   إصلاح عرض السكشن وإلغاء الفراغ الأسود الجانبي
+   ========================================================================== */
+
+.review-section {
+  padding: 2.5rem 2rem;
+  width: 100%;
+  max-width: 100%; /* إلغاء التحديد الحاد للعرض */
+  box-sizing: border-box;
+  margin: 0;
+  background: radial-gradient(circle at top right, rgba(229, 169, 60, 0.05), transparent 40%),
+              radial-gradient(circle at bottom left, rgba(15, 23, 42, 0.8), transparent 50%);
+}
+
+.review-container {
+  width: 100%;
+  max-width: 1400px; /* توسيع العرض الأقصى ليتناسب مع الشاشات العريضة */
+  margin: 0 auto;
+}
+
+.review-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.review-title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.review-title-icon {
+  font-size: 1.75rem;
+  color: var(--color-gold-main, #e5a93c);
+  filter: drop-shadow(0 0 8px rgba(229, 169, 60, 0.4));
+}
+
+.review-title {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0;
+  letter-spacing: -0.5px;
+}
+
+.review-subtitle {
+  font-size: 0.95rem;
+  color: #9ca3af;
+  margin: 0;
+}
+
+/* ناف بار التنقل - خلفية زجاجية معتمة */
+.inquiry-navbar {
+  display: flex;
+  background: rgba(11, 15, 25, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(229, 169, 60, 0.25);
+  border-radius: 1rem;
+  padding: 0.6rem;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.inquiry-nav-item {
+  flex: 1;
+  min-width: 200px;
+  background: transparent;
+  border: none;
+  color: #9ca3af;
+  padding: 0.85rem 1.25rem;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.inquiry-nav-item:hover {
+  background-color: rgba(229, 169, 60, 0.12);
+  color: #ffffff;
+}
+
+.inquiry-nav-item.active {
+  background: linear-gradient(135deg, #e5a93c 0%, #b87d1a 100%);
+  color: #000000;
+  box-shadow: 0 4px 20px rgba(229, 169, 60, 0.4);
+}
+
+/* محتوى الأقسام */
+.inquiry-content-pane {
+  display: none;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.inquiry-content-pane.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* البلوك الرئيسي - خلفية زجاجية فاخرة */
+.form-block {
+  background: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(229, 169, 60, 0.2);
+  border-radius: 1.25rem;
+  padding: 2rem;
+  box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.45);
+}
+
+.pane-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding-bottom: 1rem;
+}
+
+.block-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+/* الشارات والملاحظات */
+.note-tag {
+  display: inline-block;
+  font-size: 0.85rem;
+  color: #f87171;
+  background: rgba(239, 68, 68, 0.12);
+  padding: 0.4rem 0.85rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(239, 68, 68, 0.25);
+  font-weight: 600;
+  backdrop-filter: blur(4px);
+}
+
+.success-tag {
+  color: #34d399;
+  background: rgba(16, 185, 129, 0.12);
+  border-color: rgba(16, 185, 129, 0.25);
+}
+
+/* صندوق اختيار المنطقة */
+.region-selector-box {
+  margin-bottom: 1.5rem;
+  background: rgba(10, 14, 23, 0.5);
+  backdrop-filter: blur(8px);
+  padding: 1.25rem;
+  border-radius: 0.85rem;
+  border: 1px solid rgba(229, 169, 60, 0.15);
+}
+
+.region-selector-box label {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--color-gold-light, #fcd34d);
+  margin-bottom: 0.6rem;
+  font-weight: 600;
+}
+
+.region-dropdown {
+  width: 100%;
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(229, 169, 60, 0.35);
+  color: #ffffff;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.95rem;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.region-dropdown:focus {
+  border-color: var(--color-gold-main, #e5a93c);
+  box-shadow: 0 0 10px rgba(229, 169, 60, 0.2);
+}
+
+/* شبكة كروت الشرح */
+.explain-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+
+/* خلفية الكروت الشفافة المميزة */
+.explain-card {
+  background: linear-gradient(
+    145deg,
+    rgba(20, 29, 47, 0.6),
+    rgba(11, 16, 26, 0.7)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 1rem;
+  padding: 1.25rem;
+  text-align: right;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.explain-card:hover {
+  border-color: rgba(229, 169, 60, 0.5);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(229, 169, 60, 0.15);
+  background: linear-gradient(
+    145deg,
+    rgba(26, 38, 61, 0.7),
+    rgba(15, 22, 35, 0.8)
+  );
+}
+
+.explain-card.highlight-card {
+  background: linear-gradient(
+    145deg,
+    rgba(229, 169, 60, 0.12),
+    rgba(15, 23, 42, 0.7)
+  );
+  border-color: rgba(229, 169, 60, 0.35);
+}
+
+.explain-label {
+  font-size: 0.9rem;
+  color: var(--color-gold-light, #fcd34d);
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.explain-value {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 0.6rem;
+  background: rgba(0, 0, 0, 0.45);
+  padding: 0.5rem 0.85rem;
+  border-radius: 0.5rem;
+  display: inline-block;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  width: fit-content;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.tomorrow-date-display {
+  color: #34d399;
+  border-color: rgba(52, 211, 153, 0.35);
+  background: rgba(16, 185, 129, 0.12);
+  text-shadow: 0 0 8px rgba(52, 211, 153, 0.2);
+}
+
+.explain-desc {
+  font-size: 0.85rem;
+  color: #9ca3af;
+  line-height: 1.5;
+  margin: 0;
+}
+/* ====== */
